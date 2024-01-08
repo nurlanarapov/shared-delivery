@@ -1,0 +1,10 @@
+services:
+  template.api:
+    image: template.api:latest
+    build: api/
+    ports:
+      - 1080:80
+      - 1443:443
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - TZ=Asia/Bishkek
